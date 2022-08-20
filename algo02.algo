@@ -1,0 +1,21 @@
+ALGORITHM TriParInsertion;
+FUNCTION Tricard(Tab[1..n]) : INTEGER;
+VAR
+    tab: ARRAY_OF INTEGER[1..100];
+BEGIN
+WRITE ("Donnez la taille du tableau")
+read(n);
+     FOR i FROM o TO n STEP 1  DO
+        WRITE ("Donnez la composante",i)
+read(tab[i]);
+     END_FOR
+    FOR i FROM  TO 0 STEP 1  DO
+        j:=i-1;
+        WHILE (j>0 and T[j])>T[j+1] DO
+            tab[j]=tab[j-1];
+            j--;
+        END_WHILE
+        RETURN tab[j];
+    END_FOR
+    
+END
